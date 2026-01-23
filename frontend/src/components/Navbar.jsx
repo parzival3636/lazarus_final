@@ -47,6 +47,12 @@ const Navbar = ({ user }) => {
               Active Projects
             </Link>
             <Link 
+              to="/dashboard/company/assignments" 
+              className={location.pathname === '/dashboard/company/assignments' ? 'active' : ''}
+            >
+              Team Assignments
+            </Link>
+            <Link 
               to="/dashboard/company/find-developers" 
               className={location.pathname === '/dashboard/company/find-developers' ? 'active' : ''}
             >
@@ -72,6 +78,12 @@ const Navbar = ({ user }) => {
               className={location.pathname === '/projects' ? 'active' : ''}
             >
               Projects
+            </Link>
+            <Link 
+              to="/dashboard/developer/team-assignments" 
+              className={location.pathname === '/dashboard/developer/team-assignments' ? 'active' : ''}
+            >
+              Team Assignments
             </Link>
             <Link 
               to="/dashboard/developer/portfolio" 

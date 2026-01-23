@@ -23,6 +23,10 @@ import ProjectChatInterface from './components/ProjectChatInterface'
 import FigmaSubmissionForm from './components/FigmaSubmissionForm'
 import ProjectSubmissionForm from './components/ProjectSubmissionForm'
 import SubmissionReviewPanel from './components/SubmissionReviewPanel'
+import EnhancedProjectApplications from './components/EnhancedProjectApplications'
+import CompanyTeamAssignments from './components/CompanyTeamAssignments'
+import DeveloperTeamAssignments from './components/DeveloperTeamAssignments'
+import TalkJSChatExample from './components/TalkJSChatExample'
 import './App.css'
 
 function App() {
@@ -38,12 +42,14 @@ function App() {
         <Route path="/dashboard/company" element={<CompanyDashboard />} />
         <Route path="/dashboard/company/post-project" element={<PostProject />} />
         <Route path="/dashboard/company/my-projects" element={<MyProjects />} />
-        <Route path="/dashboard/company/projects/:projectId/applications" element={<ApplicationsView />} />
+        <Route path="/dashboard/company/projects/:projectId/applications" element={<EnhancedProjectApplications />} />
         <Route path="/dashboard/company/assigned-projects" element={<CompanyAssignedProjects />} />
+        <Route path="/dashboard/company/assignments" element={<CompanyTeamAssignments />} />
         <Route path="/dashboard/company/active-projects" element={<ActiveProjects />} />
         <Route path="/dashboard/company/find-developers" element={<FindDevelopers />} />
         <Route path="/dashboard/company/payments" element={<PaymentHistory />} />
         <Route path="/dashboard/developer/assigned-projects" element={<AssignedProjects />} />
+        <Route path="/dashboard/developer/team-assignments" element={<DeveloperTeamAssignments />} />
         <Route path="/post-project" element={<PostProject />} />
         <Route path="/profile" element={<Profile />} />
         <Route path="/profile/edit" element={<Profile />} />
@@ -56,6 +62,7 @@ function App() {
         <Route path="/assignment/:assignmentId/figma" element={<FigmaSubmissionForm />} />
         <Route path="/assignment/:assignmentId/submit" element={<ProjectSubmissionForm />} />
         <Route path="/assignment/:assignmentId/review" element={<SubmissionReviewPanel />} />
+        <Route path="/chat-example" element={<TalkJSChatExample />} />
       </Routes>
     </Router>
   )

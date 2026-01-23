@@ -656,6 +656,7 @@ def get_project_applications(request, project_id):
                     
                     applications_data.append({
                         'id': app['id'],
+                        'developer_id': app['developer_id'],  # ADD THIS LINE
                         'developer_name': developer_name or "Developer",
                         'developer_title': developer_title,
                         'developer_email': developer_email,

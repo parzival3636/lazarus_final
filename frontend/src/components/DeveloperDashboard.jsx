@@ -158,6 +158,7 @@ const DeveloperDashboard = () => {
             <div className="quick-actions">
               <h3>Quick Actions</h3>
               <Link to="/projects" className="btn btn-primary">Browse Projects</Link>
+              <Link to="/dashboard/developer/team-assignments" className="btn btn-secondary">My Team Assignments</Link>
               <Link to="/profile/edit" className="btn btn-secondary">Edit Profile</Link>
               <Link to="/dashboard/developer/portfolio" className="btn btn-secondary">Manage Portfolio</Link>
               <Link to="/earnings" className="btn btn-secondary">View Earnings</Link>

@@ -163,6 +163,7 @@ const CompanyDashboard = () => {
               <h3>Quick Actions</h3>
               <Link to="/dashboard/company/post-project" className="btn btn-primary">Post New Project</Link>
               <Link to="/dashboard/company/my-projects" className="btn btn-secondary">Manage Projects</Link>
+              <Link to="/dashboard/company/assignments" className="btn btn-secondary">Team Assignments</Link>
               <Link to="/dashboard/company/find-developers" className="btn btn-secondary">Find Developers</Link>
               <Link to="/dashboard/company/payments" className="btn btn-secondary">Payment History</Link>
             </div>

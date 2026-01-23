@@ -3,12 +3,14 @@ from rest_framework.routers import DefaultRouter
 from . import views
 from .api_views import ProjectViewSet, ProjectApplicationViewSet
 from .assignment_views import ProjectAssignmentViewSet
+from .team_assignment_views import TeamAssignmentViewSet
 
 # Create router for REST API
 router = DefaultRouter()
 router.register(r'', ProjectViewSet, basename='project')
 router.register(r'applications', ProjectApplicationViewSet, basename='application')
 router.register(r'assignments', ProjectAssignmentViewSet, basename='assignment')
+router.register(r'team-assignments', TeamAssignmentViewSet, basename='team-assignment')
 
 urlpatterns = [
     # REST API routes
